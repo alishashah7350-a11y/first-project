@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-down {
+      animation: fadeInDown 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+
+</head>
+
+<body class="bg-[#03132B]">
+
+  <video autoplay muted loop playsinline class="fixed inset-0 w-screen h-screen object-cover -z-10 pointer-events-none">
+    <source src="./wave-lines.mp4" type="video/mp4">
+  </video>
+
+  <!-- Dark overlay -->
+  <div class="fixed inset-0 bg-[#03132B]/70 -z-10 pointer-events-none"></div>
+
+  <!-- All website content -->
+  <div class="relative z-10">
+
+
+    <div class="flex justify-between pt-4 mx-4 fixed top-0 left-0 right-0 bg-gradient-to-b from-slate-900 to-transparent z-50">
+
+
+      <div
+        class="text-xl font-bold bg-gradient-to-r from-purple-500 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+        ALISHA </div>
+
+      <div class="flex gap-6">
+        <span><a href="#Home" class="text-white hover:underline"> Home </a></span>
+        <span><a href="#Experience" class="text-white hover:underline"> Experience </a></span>
+        <span><a href="#Skills" class="text-white hover:underline"> Skills </a></span>
+        <span><a href="#About" class="text-white hover:underline"> About </a></span>
+        <span><a href="#Contact" class="text-white hover:underline"> Contact </a></span>
+      </div>
+
+
+
+      <div class="flex gap-2">
+        <button
+          class="bg-slate-900 border border-gray-600 rounded-2xl text-green-500 font-sm px-4 py-1 hover:bg-slate-600 active:text-blue-400">
+          • Available </button>
+        <button
+          class="bg-blue-600 text-white rounded-lg px-4 py-1 hover:bg-blue-500 transition duration-300 hover:translate-y-1 active:bg-blue-700">
+          Let's Connect </button>
+        <button class="rounded-full bg-slate-400 px-[10px] py-1"><i class="fa-solid fa-user"></i></button>
+      </div>
+    </div>
+
+    <div id="Home" class="flex">
+      <div>
+        <p class="ml-12 mt-32"> <span class=" text-cyan-400 text-sm font-bold">• UI & UX DESIGNER </span>
+          <span class=" text-cyan-400 text-sm font-bold ml-4">• AI & DATA SCIENCE </span>
+        </p>
+
+
+        <div class="ml-12 mt-8">
+          <p class="text-5xl text-gray-300 font-semibold animate-fade-in-down"><em>Designing Digital <br> Experiences
+              With </em></p>
+
+
+          <p class="text-sm text-gray-400 font-semibold mt-6 animate-fade-in-up"> I'm Alisha Shah, a UI/UX-focused
+            technology student passionate <br> about creating clean, intuitive, and meaningful digitalexperiences.<br>I
+            combine design thinking, web technologies, and AI & Data <br> Science to turn ideas into user-focused
+            digital
+            products. </p>
+
+          <div class="flex mt-12 gap-4 ">
+            <button
+              class="bg-blue-600 text-white rounded-lg px-4 py-2 transition-all duration-300 hover:bg-cyan-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30 active:scale-95">View
+              my project →</button>
+            <button
+              class="bg-blue-600 text-white rounded-lg px-4 py-2 transition-all duration-300 hover:bg-cyan-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30 active:scale-95">
+              Let's Connect
+            </button>
+
+          </div>
+          <div class="mt-4">
+            <span class="text-green-200  animate-pulse"> •</span><span class="text-sm text-gray-300 font-semibold ml-1">
+              Open to learning, internships & creative collaborations </span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div> <img src="image5.png"
+          class="w-[650px] h-[400px] mt-28 ml-[70px] animate-float rounded-xl border border-cyan-400"> </div>
+      </div>
+
+
+    <!-- (------section 1------) -->
+
+    <div id="Experience" class="mt-20">
+      <span class=" text-cyan-400 text-sm font-bold ml-12"> OUR EXPERIENCE </span>
+      <p class="text-3xl text-gray-200 font-bold ml-12 mt-2"> Where Design Meets Technical Precision </p>
+    </div>
+
+    <div class="flex mt-8 gap-10">
+
+      <!-- {1.card} -->
+      <div
+        class=" w-[219px] h-[229px] ml-12 rounded-lg border border-blue-300 shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:border-cyan-400 hover:shadow-cyan-500/20">
+
+        <div class="border w-12 h-[49px] rounded-lg ml-2 mt-2">
+          <i class="fa-solid fa-palette ml-[13px] mt-[13px] text-purple-300"></i>
+        </div>
+        <p class="text-white font-semibold text-lg ml-2 mt-4"> UI/UX Design </p>
+        <p class="text-gray-400 ml-2 text-sm mt-2"> User-centered interfaces,<br>
+          wireframes,prototypes and <br> visual design.</p>
+
+        <div class="flex justify-between bg-black mx-1 mt-4">
+          <div class="text-blue-400 px-2 font-bold">Atomic Design</div>
+          <div class="text-gray-400 px-2 "><i class="fa-regular fa-circle-check font-bold"></i></div>
+        </div>
+      </div>
+
+
+      <!-- {2.card} -->
+      <div
+        class=" w-[219px] h-[229px] ml-12 rounded-lg border border-blue-300 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-cyan-400 hover:shadow-cyan-500/20">
+
+        <div class="border w-12 h-[49px] rounded-lg ml-2 mt-2">
+          <i class="fa-solid fa-code ml-[13px] mt-[15px] text-blue-300"></i>
+        </div>
+        <p class="text-white font-semibold text-lg ml-2 mt-4"> Web Development </p>
+        <p class="text-gray-400 ml-2 text-sm mt-2">Responsive websites using<br>
+          modern front-end technologies</p>
+
+        <div class="flex justify-between bg-black mx-1 mt-[37px]">
+          <div class="text-gray-400 font-bold">
+            < </div>
+              <div class="text-purple-400 font-bold">FlexLayout </div>
+              <div class="text-green-500 font-bold">grid </div>
+              <div class="text-gray-400 font-bold"> ="12" /></div>
+          </div>
+        </div>
+
+
+
+        <!-- {3.card} -->
+        <div
+          class=" w-[219px] h-[229px] ml-12 rounded-lg border border-blue-300 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-cyan-400 hover:shadow-cyan-500/20">
+
+          <div class="border w-12 h-[49px] rounded-lg ml-2 mt-2">
+            <i class="fa-solid fa-brain  ml-[15px] mt-[15px] text-green-600"></i>
+
+          </div>
+          <p class="text-white font-semibold text-lg ml-2 mt-4"> AI & Data Science</p>
+          <p class="text-gray-400 ml-2 text-sm mt-2">Technology-focused problem<br>
+            solving and data-driven thinking.</p>
+
+          <div class="flex justify-between bg-black mx-1 mt-[37px]">
+            <div class="text-gray-400 px-1 font-bold">Weight .eval()</div>
+            <div class="text-gray-400 px-1 font-bold text-green-500">98.4% ACC</div>
+          </div>
+        </div>
+
+
+
+        <!-- {4.card} -->
+        <div
+          class=" w-[219px] h-[229px] ml-12 rounded-lg border border-blue-300 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-cyan-400 hover:shadow-cyan-500/20">
+
+          <div class="border w-12 h-[49px] rounded-lg ml-2 mt-2">
+            <i class="fa-solid fa-head-side-virus ml-[15px] mt-[15px] text-purple-300"></i>
+          </div>
+          <p class="text-white font-semibold text-lg ml-2 mt-4"> Design Thinking </p>
+          <p class="text-gray-400 ml-2 text-sm mt-2"> Research, ideation, prototyping <br>
+            and continuous improvement.</p>
+
+          <div class="flex justify-between bg-black mx-1 mt-4">
+            <div class="text-blue-400 px-1 font-bold"> Discover • Define</div>
+            <div class="text-purple-500 px-1 font-bold "> Develop • Deliver </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- (------section 2------) -->
+
+    <div id="Skills" class="mt-20">
+      <span class=" text-cyan-400 text-sm font-bold ml-12"> FEATURED CASE STUDY </span>
+      <p class="text-3xl text-gray-200 font-bold ml-12 mt-2">Spotlight Project </p>
+    </div>
+
+    <div class="flex mt-6 gap-28">
+
+      <div> <img src="image4.png"
+          class="ml-12 animate-float w-[500px] h-[400px] rounded-xl bg-transparent object-contain border border-blue-300">
+      </div>
+
+
+
+      <div
+        class=" border border-blue-200 shadow-4xl shadow-cyan w-[500px] h-[400px] ml-12 shadow-xl rounded-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-cyan-500/20 animate-float">
+
+
+        <div class="mt-4">
+          <span class=" text-cyan-400 text-sm font-bold ml-12"> UI & UX DESIGN </span>
+          <span class="text-sm text-gray-200 font-bold ml-6"> Year: 2024 </span>
+        </div>
+
+        <p class="ml-12 mt-2 text-xl text-gray-300 font-bold"> ZEVRAYA UI & UX Recreation </p>
+        <p class="ml-12 mt-2 text-sm text-gray-400 font-semibold"> ROLE </p>
+        <p class="ml-12 mt-4 text-sm text-gray-300 font-semibold"> Lead UI/UX Designer & Researcher </p>
+        <p class="ml-12 text-gray-400 mt-2"> A mobile food-delivery experience recreated in <br>
+          Figma with a focus on intuitive navigation, visual <br>
+          hierarchy, accessibility, and user-friendly<br> interactions.</p>
+
+        <div class="ml-12 text-sm text-gray-300 font-semibold mt-6">
+          <span> Figma </span>
+          <span class="ml-4"> UI Design </span>
+          <span class="ml-4"> prototyping </span>
+          <span class="ml-4"> User Testing </span>
+        </div>
+
+        <p class=" text-blue-200 text-sm font-bold ml-12 mt-2"> Design System </p>
+        <button
+          class="bg-blue-600 text-white rounded-lg px-4 py-2 transition-all duration-300 hover:bg-cyan-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30 active:scale-95 ml-12 mt-6">
+          View Case Study → </button>
+      </div>
+
+    </div>
+
+    <!-- (------section 3------) -->
+
+    <p class=" text-cyan-400 text-sm font-bold ml-12 mt-20"> METHODOLOGY </p>
+    <p class="text-3xl text-gray-200 font-bold ml-12 mt-2"> My Design Process </p>
+
+    <div class="grid grid-cols-4 gap-5 mx-10">
+
+      <!-- {----1.card----} -->
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2  hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-blue-200 text-xl font-semibold mt-2"> 01 </p>
+          <i class="fa-regular fa-compass text-blue-200 mt-4"></i>
+        </div>
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold">Discover </p>
+        <p class="ml-2 text-gray-400 mt-4 text-md"> Empathize with users and unpack <br>
+          problem spaces.</p>
+      </div>
+
+
+
+      <!-- {----2.card----} -->
+
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2  hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-blue-200 text-xl font-semibold mt-2"> 02 </p>
+          <i class="fa-solid fa-magnifying-glass text-blue-200 mt-4"></i>
+        </div>
+
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold"> Reasearch </p>
+        <p class="ml-2 text-gray-400 mt-4 text-md"> Competitor audits, qualitative<br>
+          interviews & behavioral insights.</p>
+      </div>
+
+
+
+      <!-- {----3.card----} -->
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2  hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-cyan-200 text-xl font-semibold mt-2"> 03 </p>
+          <i class="fa-regular fa-circle-dot text-cyan-200 mt-4"></i>
+        </div>
+
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold"> Define</p>
+        <p class="ml-2 text-gray-400 mt-4 text-md"> User personas, journey mapping <br>&
+          core design goals.</p>
+      </div>
+
+
+
+      <!-- {----4.card----} -->
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-cyan-200 text-xl font-semibold mt-2"> 04 </p>
+          <i class="fa-regular fa-lightbulb text-cyan-200 mt-4"></i>
+        </div>
+
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold"> Ideate </p>
+        <p class="ml-2 text-gray-400 mt-4 text-md"> Information architecture, rapid<br>
+          sketches & brainwriting. </p>
+      </div>
+
+
+
+      <!-- {----5.card----} -->
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-purple-300 text-xl font-semibold mt-2"> 05 </p>
+          <i class="fa-solid fa-border-all mt-4 text-purple-300"></i>
+        </div>
+
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold"> Wireframes </p>
+        <p class="ml-2 text-gray-400 mt-4 text-md">Low-fidelity structural wireframes<br>
+          and layout flows.</p>
+      </div>
+
+
+
+      <!-- {----6.card----} -->
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2  hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-purple-300 text-xl font-semibold mt-2"> 06 </p>
+          <i class="fa-solid fa-computer text-purple-300 mt-4"></i>
+        </div>
+
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold"> Prototype </p>
+        <p class="ml-2 text-gray-400 mt-4 text-md"> High-fidelity interactive<br>
+          components & micro-interactions.</p>
+      </div>
+
+
+
+      <!-- {-----7.card----} -->
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-green-200 text-xl font-semibold mt-2"> 07 </p>
+          <i class="fa-solid fa-list-check text-green-200 mt-4 "></i>
+        </div>
+
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold"> Test </p>
+        <p class="ml-2 text-gray-400 mt-4 text-md"> Usability validation, accessibility<br>
+          checks & task-completion metrics.</p>
+      </div>
+
+
+
+      <!-- {----8.card----} -->
+      <div
+        class="w-[260px] h-[180px] border border-blue-400 mt-6 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/20">
+
+        <div class="flex justify-between mx-4">
+          <p class=" text-green-200 text-xl font-semibold mt-2"> 08 </p>
+          <i class="fa-solid fa-arrow-up text-green-200 mt-4"></i>
+        </div>
+
+        <p class="ml-2 mt-4 text-xl text-gray-300 font-bold"> Improve </p>
+        <p class="ml-2 text-gray-400 mt-4 text-md"> Data-informed iterations and<br>
+          design system standardization.</p>
+      </div>
+
+    </div>
+
+
+    <!-- (------section 4------) -->
+    <div id="About" class="flex justify-between mt-20">
+      <!-- ( left-side ) -->
+
+      <div>
+        <p class=" text-cyan-400 text-sm font-bold ml-12 mt-8"> ABOUT SNAPSHOT </p>
+        <p class="text-4xl text-gray-200 font-semibold ml-12 mt-2"> <em>A Designer Who Thinks <br>Beyound the Interface
+          </em></p><br><br>
+        <p class="text-md text-gray-400 font-semibold ml-12"> I enjoy understanding how people interact with digital
+          products <br> and transforming complex ideas into simple, intuitive experiences. <br> My learning journey
+          combines UI/UX, web development, AI and Data Science,<br> allowing me to approach problems from both creative
+          and technical perspectives. </p><br><br>
+
+        <button
+          class="bg-blue-600 text-white rounded-lg px-4 py-2 transition-all duration-300 hover:bg-cyan-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30 active:scale-95 ml-12">
+          More About Me →</button>
+      </div>
+
+      <div>
+
+
+        <!-- ( 1. slide ) -->
+        <div
+          class="border border-blue-400 w-[500px] h-[120px] mr-8 rounded-2xl transition-all duration-300  hover:shadow-md hover:shadow-cyan-500/40">
+          <div class="flex justify-between mx-6">
+            <h1 class="text-blue-200 text-3xl font-bold mt-2"> 3+ </h1>
+            <i class="fa-solid fa-code-branch ml-[13px] mt-[36px] text-slate-400"></i>
+          </div>
+
+          <p class="text-cyan-400 ml-6 font-semibold text-xl"> Fields Synthesized </p>
+          <p class="text-gray-200 ml-6 ">UI/UX, Web Dev., & AI Data</p>
+        </div>
+        <br>
+
+
+        <!-- (2.slide) -->
+        <div
+          class="border border-blue-400 w-[500px] h-[120px] mr-8 rounded-2xl transition-all duration-300  hover:shadow-md hover:shadow-cyan-500/40">
+          <div class="flex justify-between mx-6">
+            <h1 class="text-green-200 text-3xl font-bold mt-2"> 100% </h1>
+            <i class="fa-regular fa-heart ml-[13px] mt-[36px] text-green-600"></i>
+          </div>
+
+          <p class="text-cyan-400 ml-6 font-semibold text-xl"> User-Obsessed </p>
+          <p class="text-gray-200 ml-6 "> Empathetic Human Architecture </p>
+        </div>
+        <br>
+
+
+        <!-- (3.slide) -->
+        <div
+          class="border border-blue-400 w-[500px] h-[120px] mr-8 rounded-2xl transition-all duration-300  hover:shadow-md hover:shadow-cyan-500/40">
+          <div class="flex justify-between mx-6">
+            <h1 class="text-purple-200 text-3xl font-bold mt-2"> Data </h1>
+            <i class="fa-solid fa-chart-column ml-[13px] mt-[36px] text-gray-300"></i>
+          </div>
+
+          <p class="text-cyan-400 ml-6 font-semibold text-xl"> Informed UX </p>
+          <p class="text-gray-200 ml-6 "> Quant & Qual Verified Systems </p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    - <!-- (------section 5------) -->
+
+    <p class=" text-cyan-400 text-sm font-bold ml-12 mt-8"> CREDENTIALS </p>
+    <p class="text-4xl text-gray-200 font-semibold ml-12 mt-2">Achievments & Certifications</p>
+
+    <div class="flex gap-6 gap-4 mt-6 mx-8">
+
+      <!-- { 1.card } -->
+      <div
+        class="w-[400px] h-[280px] border border-blue-300 rounded-lg ml-2 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-cyan-400 hover:shadow-cyan-500/20">
+        <div class="flex justify-between mx-4">
+          <div class="border w-14 h-[30px] rounded-md mt-6">
+            <p class="text-blue-200 text-sm font-bold ml-3 mt-1">2024 </p>
+          </div>
+          <div> <i class="fa-solid fa-circle-check text-cyan-400 mt-6"></i></div>
+        </div>
+
+        <h1 class="text-blue-200 font-semibold text-xl ml-3 mt-4"> Advanced UI & UX Specializatoion </h1>
+        <p class="text-purple-400 text-md font-semibold ml-3 mt-1 "> interactions Design Institute / Coursera </p>
+
+        <p class="text-mg text-gray-200 ml-3 mt-4">Mastered user-centered research, high-fidelity wireframing,
+          component-driven design systems, and rapid prototyping.</p>
+
+        <p class="font-bold text-sm text-blue-200 ml-3 mt-6"> View Certificate ↗ </p>
+      </div>
+
+
+      <!-- { 2.card } -->
+      <div
+        class="w-[400px] h-[280px]  border border-blue-300 rounded-lg ml-2 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-cyan-400 hover:shadow-cyan-500/20">
+        <div class="flex justify-between mx-4">
+          <div class="border w-[120px] h-[31px] rounded-lg mt-6">
+            <p class="text-blue-200 text-sm font-bold ml-3 mt-1"> 2023 - Present </p>
+          </div>
+          <div><i class="fa-solid fa-graduation-cap text-cyan-400 mt-8 "></i> </div>
+        </div>
+
+        <h1 class="text-blue-200 font-semibold text-xl ml-3 mt-4">AI & Data Science Foundations</h1>
+        <p class="text-purple-400 text-md font-semibold ml-3 mt-1 "> University Technology Faculty </p>
+
+        <p class="text-mg text-gray-200 ml-3 mt-4">Focus on machine learning fundamentals, exploratory data analysis,
+          algorithmic thinking,<br> and predictive modeling.</p>
+
+        <p class="font-bold text-sm text-blue-200 ml-3 mt-6"> View Certificate ↗ </p>
+      </div>
+
+
+
+      <!-- {3. card } -->
+      <div
+        class="w-[400px] h-[280px]  border border-blue-300 rounded-lg ml-2 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-cyan-400 hover:shadow-cyan-500/20">
+        <div class="flex justify-between mx-4">
+          <div class="border w-14 h-[30px] rounded-md mt-6">
+            <p class="text-blue-200 text-sm font-bold ml-3 mt-1">2023 </p>
+          </div>
+          <div> <i class="fa-solid fa-award mt-8 text-cyan-400"></i></div>
+        </div>
+
+        <h1 class="text-blue-200 font-semibold text-xl ml-3 mt-4"> Modern Front-End Web Development </h1>
+        <p class="text-purple-400 text-md font-semibold ml-3 mt-1 "> Web Standards Academy </p>
+
+        <p class="text-mg text-gray-200 ml-3 mt-4">Core competencies in semantic HTML5, modern CSS3/Tailwind, JavaScript
+          ES6+, and responsive <br> UI engineering.</p>
+
+        <p class="font-bold text-sm text-blue-200 ml-3 mt-6"> View Certificate ↗ </p>
+      </div>
+    </div>
+
+
+
+
+    <!-- {------LAST-----} -->
+
+    <div id="Contact" class="w-[1160px] p-6 border border-blue-300 rounded-xl mx-12 mt-8">
+      <p class=" text-cyan-400 text-sm font-bold ml-[460px] "> COLLABORATION RADAR </p><br>
+      <p class="bg-gradient-to-r from-blue-200 to-blue-500 bg-clip-text text-transparent text-5xl font-bold ml-[350px]">
+        Have an idea worth </p>
+      <p
+        class="bg-gradient-to-r from-blue-200 to-blue-500 bg-clip-text text-transparent text-5xl font-bold ml-[440px] pb-2">
+        designing ?</p><br>
+      <p class="text-gray-300 font-semibold text-md ml-[400px]"> Let's turn your idea into a thoughtful digital
+        experience. </p><br>
+
+      <button
+        class="bg-blue-600 text-white rounded-lg px-4 py-2 transition-all duration-300 hover:bg-cyan-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30 active:scale-95 ml-[500px]">
+        Let's Connect <i class="fa-regular fa-envelope"></i> </button>
+    </div>
+
+
+
+    <!-- (------footer-------) -->
+
+    <div class="grid grid-cols-4 mt-16">
+
+      <div class="ml-12">
+        <p
+          class="text-xl font-bold bg-gradient-to-r from-purple-500 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+          ALISHA </p>
+        <p class="text-sm text-gray-300 font-semibold mt-4"> Designing meaningful digital experiences through
+          creativity, technology, and user-centered thinking. </p>
+        <p class=" text-cyan-400 text-sm font-bold mt-2"> ai_product_architect v2.4 </p><br> <br>
+      </div>
+
+
+      <div class="ml-24 ">
+        <p class="text-gray-300 font-semibold"> DIRECTORY INDEX </p>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-purple-400 mt-4"> Home </p>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-purple-400"> Skills </p>
+        <P class="text-gray-300 font-md hover:font-bold hover:text-purple-400"> Experience </P>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-purple-400"> Resume </p>
+      </div>
+
+
+      <div class="ml-18 mt-6">
+        <p class="text-gray-300 font-md hover:font-bold hover:text-purple-400 mt-4"> About </p>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-purple-400"> Project </p>
+        <P class="text-gray-300 font-md hover:font-bold hover:text-purple-400"> Services </P>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-purple-400"> Contact </p>
+      </div>
+
+
+      <div class="ml-18 ">
+        <p class="text-gray-300 font-semibold"> NETWORK NOTES </p>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-cyan-400 mt-4 hover:text-blue-200"> <i
+            class="fa-solid fa-link mr-2"></i> LinkedIn </p>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-cyan-400"> <i class="fa-solid fa-code mr-2"></i>
+          Github </p>
+        <P class="text-gray-300 font-md hover:font-bold hover:text-cyan-400"> <i class="fa-solid fa-palette mr-2"></i>
+          Dribbble </P>
+        <p class="text-gray-300 font-md hover:font-bold hover:text-cyan-400"> <i
+            class="fa-regular fa-envelope mr-2"></i> alishashah7350@gmail.com </p><br>
+      </div>
+    </div>
+
+    <div class="flex justify-between  mb-4">
+      <p class="text-gray-400 text-sm font-semibold ml-12"> <i class="fa-regular fa-copyright"></i> 2024 Alisha Shah.
+        Engineered with architectural precision. </p>
+      <p class="text-gray-400 text-sm font-semibold mr-44"> Design System Tokens </p>
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>
